@@ -7,6 +7,7 @@ class ContentDB(object):
     '''
     def __init__(self):
         self._db = rss_content
+        self._db.create_index([('address', 'text'), ('description', 'text')])
 
     def insert_one(self, doc):
         # TODO: Validate the document
@@ -21,7 +22,7 @@ class ContentDB(object):
         else:
             self.insert_one(docs_list)
 
-    def get_addresses(self, filter={}):
+    def get_feed(self, filter={}):
         for doc in self._db.find(filter):
             yield doc
 
@@ -29,3 +30,9 @@ class ContentDB(object):
         if not self._db.find_one({'address': doc['address']}):
             raise NameError(f'Address: {doc["address"]} does not exist!')
         self._db.delete_one({'address': doc['address']})
+
+    def remove_all(self):
+        self._db.remove()
+
+    def search(self, keywords):
+        return self._db.find({"$text": {"$search": keywords}})
