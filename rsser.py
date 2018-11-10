@@ -23,12 +23,11 @@ class FeedParser(object):
         if data.status is not 200:
             raise NameError(f'Error! could not get data from the server error code: {data.status}')
 
-        doc = {'address': url, 'feed': data}
         if q:
-            q.put(doc)
-            server_logger.debug(f'{url}: data is in the queue')
+            q.put(data)
+            server_logger.debug(f'{data}: data is in the queue')
         else:
-            return doc
+            return data
 
     def parse_many(self, urls_list):
         '''

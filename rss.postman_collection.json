@@ -1,0 +1,175 @@
+{
+	"id": "378e0ad2-8720-0e0b-50aa-a03ab23f0122",
+	"name": "rss",
+	"description": "",
+	"order": [
+		"e903e1c5-4dff-e349-9d43-5165ffc4fd85",
+		"888ad354-d514-cbb9-d786-3fc396cc0da8",
+		"eb417d0c-d151-ef3b-78d9-819ec3d385ae",
+		"56997d1e-e550-89fa-3dc8-38edace070a7",
+		"32647d89-36bf-45c2-89af-bdf5c1dbd01c"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1541890869841,
+	"owner": "226319",
+	"public": false,
+	"requests": [
+		{
+			"id": "32647d89-36bf-45c2-89af-bdf5c1dbd01c",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:5000/search",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "378e0ad2-8720-0e0b-50aa-a03ab23f0122",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://127.0.0.1:5000/search",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1541891021896,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"keywords\": \"turkey\"\n}"
+		},
+		{
+			"id": "56997d1e-e550-89fa-3dc8-38edace070a7",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:5000/search_by_dates",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "378e0ad2-8720-0e0b-50aa-a03ab23f0122",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://127.0.0.1:5000/search_by_dates copy",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1541890979679,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"isFromCollection": true,
+			"collectionRequestId": "eb417d0c-d151-ef3b-78d9-819ec3d385ae",
+			"rawModeData": "{\n\t\"start_date\": \"2018.10.1\",\n\t\"end_date\": \"2018.12.1\"\n}"
+		},
+		{
+			"id": "888ad354-d514-cbb9-d786-3fc396cc0da8",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:5000/add",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1541891871574,
+			"name": "http://127.0.0.1:5000/add copy",
+			"description": "",
+			"collectionId": "378e0ad2-8720-0e0b-50aa-a03ab23f0122",
+			"responses": [],
+			"rawModeData": "{\"rss_address\": \"http://feeds.bbci.co.uk/news/business/rss.xml\"}"
+		},
+		{
+			"id": "e903e1c5-4dff-e349-9d43-5165ffc4fd85",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:5000/add",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "378e0ad2-8720-0e0b-50aa-a03ab23f0122",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://127.0.0.1:5000/add",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1541890872865,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\"rss_address\": \"http://feeds.bbci.co.uk/news/world/rss.xml\"}"
+		},
+		{
+			"id": "eb417d0c-d151-ef3b-78d9-819ec3d385ae",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://127.0.0.1:5000/search_by_dates",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "378e0ad2-8720-0e0b-50aa-a03ab23f0122",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://127.0.0.1:5000/search_by_dates",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1541890979679,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\t\"start_date\": \"2018.10.1\",\n\t\"end_date\": \"2018.12.1\"\n}"
+		}
+	]
+}
